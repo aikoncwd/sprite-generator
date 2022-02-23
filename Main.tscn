@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://pixel_font.tres" type="Theme" id=2]
+[ext_resource path="res://modes.png" type="Texture" id=3]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 69, 137 )
+texture = ExtResource( 3 )
+hframes = 7
+
+[node name="Label" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 135.0
+margin_right = 66.0
+margin_bottom = 141.0
+theme = ExtResource( 2 )
+text = "Mouse1: Mode >"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 141.0
+margin_right = 63.0
+margin_bottom = 147.0
+theme = ExtResource( 2 )
+text = "Mouse2: Color"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 210.0
+margin_top = 141.0
+margin_right = 246.0
+margin_bottom = 147.0
+theme = ExtResource( 2 )
+text = "R: Renew"
+__meta__ = {
+"_edit_use_anchors_": false
+}
