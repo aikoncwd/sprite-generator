@@ -1,19 +1,15 @@
 extends Control
 
-var height
-var width
+var height = 8
+var width = 15
 var matrix = []
 var mode = 0
 var margin = 8
 var color1 = Color.darkslateblue
 var color2 = Color.black
 
-
-
 func _ready():
 	randomize()
-	height = 8
-	width = 15
 	$ColorRect.color = color1
 	for i in range(width):
 		matrix.append([])
